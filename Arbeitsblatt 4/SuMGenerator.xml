@@ -1,0 +1,35 @@
+<object-stream>
+  <vector>
+    <string>SuMAnwendung</string>
+    <sum.generator.KomponentenBeschreibung>
+      <hatEreignisListe/>
+      <zTyp>0</zTyp>
+      <zInhalt></zInhalt>
+      <zBezeichner>hatErgebnis</zBezeichner>
+      <zGeklicktBearbeiter>komponenteGeklickt</zGeklicktBearbeiter>
+      <zAusrichtung>0</zAusrichtung>
+      <zStandardEreignis>-1</zStandardEreignis>
+      <zLinks>208</zLinks>
+      <zOben>48</zOben>
+      <zBreite>150</zBreite>
+      <zHoehe>25</zHoehe>
+    </sum.generator.KomponentenBeschreibung>
+    <sum.generator.KomponentenBeschreibung>
+      <hatEreignisListe>
+        <int>0</int>
+        <int>1</int>
+        <int>2</int>
+      </hatEreignisListe>
+      <zTyp>1</zTyp>
+      <zInhalt>Ausrechnen</zInhalt>
+      <zBezeichner>hatKnopfAusrechnen</zBezeichner>
+      <zGeklicktBearbeiter>komponenteGeklickt</zGeklicktBearbeiter>
+      <zAusrichtung>-1</zAusrichtung>
+      <zStandardEreignis>2</zStandardEreignis>
+      <zLinks>208</zLinks>
+      <zOben>23</zOben>
+      <zBreite>150</zBreite>
+      <zHoehe>25</zHoehe>
+    </sum.generator.KomponentenBeschreibung>
+  </vector>
+</object-stream>

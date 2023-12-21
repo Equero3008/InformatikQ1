@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.params=
+comment0.target=SuMAnwendung()
+comment1.params=
+comment1.target=void\ hatKnopfGr\u00F6\u00DFerKleinerGeklickt()
+comment2.params=
+comment2.target=void\ hatKnopfSortiereGeklickt()
+comment3.params=
+comment3.target=void\ hatKnopf3Geklickt()
+comment4.params=
+comment4.target=void\ hatKnopf2Geklickt()
+comment5.params=
+comment5.target=void\ hatKnopf1Geklickt()
+comment6.params=
+comment6.target=void\ arrayMach()
+comment7.params=
+comment7.target=void\ ausgabe()
+numComments=8

@@ -1,0 +1,18 @@
+<object-stream>
+  <vector>
+    <string>SuMAnwendung</string>
+    <sum.generator.KomponentenBeschreibung>
+      <hatEreignisListe/>
+      <zTyp>0</zTyp>
+      <zInhalt>Etikett 1</zInhalt>
+      <zBezeichner>hatEtikett1</zBezeichner>
+      <zGeklicktBearbeiter>komponenteGeklickt</zGeklicktBearbeiter>
+      <zAusrichtung>0</zAusrichtung>
+      <zStandardEreignis>-1</zStandardEreignis>
+      <zLinks>282</zLinks>
+      <zOben>142</zOben>
+      <zBreite>100</zBreite>
+      <zHoehe>25</zHoehe>
+    </sum.generator.KomponentenBeschreibung>
+  </vector>
+</object-stream>

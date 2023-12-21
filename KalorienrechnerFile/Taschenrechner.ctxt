@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Taschenrechner()
+comment1.params=pGewicht\ pGroesse\ pAlter\ pFrau\ pMann
+comment1.target=double\ berechne(double,\ double,\ double,\ boolean,\ boolean)
+numComments=2
