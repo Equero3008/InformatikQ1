@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Rechner()
+comment1.params=pZahl\ pWiederholungen
+comment1.target=int\ berechne(int,\ int)
+numComments=2
