@@ -1,9 +1,3 @@
-/**
- * Die Klasse SuMAnwendung wurde automatisch erstellt: 
- * 
- * @author 
- * @version 11.1.2024
- */
 
 import sum.komponenten.*;
 import sum.werkzeuge.*;
@@ -24,16 +18,18 @@ public class SuMAnwendung extends EBAnwendung
     private Knopf hatKnopfBeenden;
     private Patient hatPatient;
     private Wartezimmer hatWartezimmer;
+    private Beenden hatBeenden;
+    String uio = "";
     // Attribute
 
-/**
- * Konstruktor
- */
+    /**
+     * Konstruktor
+     */
     public SuMAnwendung()
     {
         //Initialisierung der Oberklasse
         super(1697, 971);
-        
+        hatWartezimmer = new Wartezimmer();
         hatEtikettName = new Etikett(23, 23, 200, 25, "Name");
         // Ausrichtung
         hatEtikettName.setzeAusrichtung(Ausrichtung.LINKS);
@@ -52,7 +48,7 @@ public class SuMAnwendung extends EBAnwendung
         hatTextfeld3 = new Textfeld(223, 73, 200, 25, "");
         // Ausrichtung
         hatTextfeld3.setzeAusrichtung(Ausrichtung.LINKS);
-        hatZeilenbereich1 = new Zeilenbereich(223, 123, 200, 400, "");
+        hatZeilenbereich1 = new Zeilenbereich(223, 123, 800, 400, "");
         hatKnopfEintragen = new Knopf(23, 123, 150, 25, "Eintragen");
         hatKnopfEintragen.setzeBearbeiterGeklickt("hatKnopfEintragenGeklickt");
         hatKnopfAustragen = new Knopf(23, 148, 150, 25, "Austragen");
@@ -61,31 +57,44 @@ public class SuMAnwendung extends EBAnwendung
         hatKnopfBeenden.setzeBearbeiterGeklickt("hatKnopfBeendenGeklickt");
     }
 
-/**
- * Vorher: Ereignis GeklicktvonhatKnopfEintragen fand statt.
- * Nachher: (schreiben Sie, was in dieser Methode ausgefuehrt wird)
- */
+    /**
+     * Vorher: Ereignis GeklicktvonhatKnopfEintragen fand statt.
+     * Nachher: (schreiben Sie, was in dieser Methode ausgefuehrt wird)
+     */
     public void hatKnopfEintragenGeklickt()
     {
-        //    Schreiben Sie hier den Text ihres Dienstes
+        
+        if (hatWartezimmer.Counter() < 10)
+        {
+            hatWartezimmer.Eintrag(hatTextfeld2.inhaltAlsText(), hatTextfeld1.inhaltAlsText(), hatTextfeld3.inhaltAlsText());
+        
+            uio = hatWartezimmer.Ausgabe();
+            hatZeilenbereich1.setzeInhalt(uio);
+        }
     }
 
-/**
- * Vorher: Ereignis GeklicktvonhatKnopfAustragen fand statt.
- * Nachher: (schreiben Sie, was in dieser Methode ausgefuehrt wird)
- */
+    /**
+     * Vorher: Ereignis GeklicktvonhatKnopfAustragen fand statt.
+     * Nachher: (schreiben Sie, was in dieser Methode ausgefuehrt wird)
+     */
     public void hatKnopfAustragenGeklickt()
     {
-        //    Schreiben Sie hier den Text ihres Dienstes
+        
+        if (hatWartezimmer.Counter() > 0)
+        {
+            hatWartezimmer.Austragen();
+            hatZeilenbereich1.setzeInhalt(hatWartezimmer.Rewrite());
+        }
     }
 
-/**
- * Vorher: Ereignis GeklicktvonhatKnopfBeenden fand statt.
- * Nachher: (schreiben Sie, was in dieser Methode ausgefuehrt wird)
- */
+    /**
+     * Vorher: Ereignis GeklicktvonhatKnopfBeenden fand statt.
+     * Nachher: (schreiben Sie, was in dieser Methode ausgefuehrt wird)
+     */
     public void hatKnopfBeendenGeklickt()
     {
-        //    Schreiben Sie hier den Text ihres Dienstes
+        hatBeenden = new Beenden();
+        
     }
 
 }
